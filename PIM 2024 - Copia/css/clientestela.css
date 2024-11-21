@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(../img/protocolbackground.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+.navbar {
+    background-color: #022213; 
+    padding: 10px 20px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; /* Alinha a logo verticalmente */
+    justify-content: space-between; 
+}
+
+.navbar .logo img {
+    max-height: 100px; 
+    width: auto; 
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center; /* Alinha os itens ao centro */
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+.navbar ul li {
+    margin: 0 15px; /* Espaço entre os itens */
+}
+
+.navbar ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Deixa as letras maiúsculas */
+    padding: 5px 10px; /* Espaçamento interno dos links */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+.navbar ul li a:hover {
+    color: #0cbd6d; /* Cor do link ao passar o mouse */
+}
+
+/* Adicionando um espaçamento superior para evitar que o conteúdo fique escondido atrás da nav fixa */
+body {
+    padding-top: 70px;
+}

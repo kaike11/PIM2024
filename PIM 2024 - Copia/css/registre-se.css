@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url(../img/fundoteladelogineregs.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+.navbar {
+    background-color: #022213; 
+    padding: 10px 20px; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; /* Alinha a logo verticalmente */
+    justify-content: space-between; 
+}
+
+.navbar .logo img {
+    max-height: 100px; 
+    width: auto; 
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center; /* Alinha os itens ao centro */
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+.navbar ul li {
+    margin: 0 15px; /* Espaço entre os itens */
+}
+
+.navbar ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px; /* Tamanho da fonte */
+    text-transform: uppercase; /* Deixa as letras maiúsculas */
+    padding: 5px 10px; /* Espaçamento interno dos links */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+.navbar ul li a:hover {
+    color: #0cbd6d; /* Cor do link ao passar o mouse */
+}
+
+/* Adicionando um espaçamento superior para evitar que o conteúdo fique escondido atrás da nav fixa */
+body {
+    padding-top: 70px;
+}
+
+.w50 {
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+
+.box {
+    display: flex;
+    width: 930px;
+}
+
+.img-box {
+    background-color: #0a503193;
+    width: 50%; /* Ajustado para acomodar a imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza a imagem no contêiner */
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.img-box img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.form-box {
+    background-color: #0a503193;
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    border-radius: 0 20px 20px 0;
+}
+
+.form-box h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.form-box p {
+    color: white;
+    font-weight: bold;
+}
+
+.form-box p a {
+    color: #00ff8c;
+    text-decoration: none;
+}
+
+.form-box form {
+    margin: 20px 0;
+}
+
+form .input-group {
+    margin-bottom: 15px;
+}
+
+form .input-group label {
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form .input-group input {
+    width: 100%;
+    height: 47px;
+    background-color: #62ffb9;
+    border-radius: 20px;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 15px;
+    font-size: 15px;
+    color: #0a613a;
+    transition: all 0.4s ease;
+}
+
+form .input-group input:focus {
+    border-color: #0a613a;
+}
+
+form .input-group button {
+    width: 100%;
+    height: 47px;
+    background-color: #00ff8c;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    color: #0a613a;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+@media (max-width: 930px) {
+    .img-box {
+        display: none;
+    }
+    .form-box {
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .w50 {
+        width: 100%;
+        padding: 0;
+    }
+}
